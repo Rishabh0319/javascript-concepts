@@ -1,0 +1,18 @@
+
+                        *************** let var and const rules ***************** 
+
+
+1. var is a global scoped while let and const are blocked scoped.
+
+2. var can be updated and re-declared with in it's scope.
+
+3. let can be updated but not re-declared.
+
+4. const can nither be updated nor be re-declared.
+
+5. var variables are initialized with undefined where let and const variable are not initialized.
+
+6. const must be initialized during decliration unlike let and var.
+
+
+
