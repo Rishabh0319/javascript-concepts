@@ -271,21 +271,44 @@
 
 
 
-const promiseObj2 = new Promise((resolve, reject) => {
+// const promiseObj2 = new Promise((resolve, reject) => {
 
-   let req = false;
+//    let req = false;
 
-   if (req) {
-      resolve('Request is Rejected');
+//    if (req) {
+//       resolve('Request is Rejected');
+//    }
+//    else {
+//       reject('Request is Rejected');
+//    }
+
+// }).then((value) => {
+//    console.log(value);
+// }, (error) => {
+//    console.log(error);
+// })
+
+
+
+
+
+
+const pro = new Promise((resolve, reject) => {
+   if (true) {
+      resolve();
    }
    else {
-      reject('Request is Rejected');
+      reject();
    }
+});
 
-}).then((value) => {
-   console.log(value);
-}, (error) => {
-   console.log(error);
+
+pro.then(() => {
+   console.log("Resolve Ho Gaya Tha");
+}).catch(() => {
+   console.log("Reject Ho Gaya Tha");
 })
+
+
 
 

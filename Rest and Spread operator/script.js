@@ -66,3 +66,23 @@
 
 
 
+let a = [122, 23, 3, 45, 765, 78, 79, 809, 87, 756, 45, 32, 57];
+let b = a;    // this is referance of the [a] array into be
+let c = [...a];   // this is spread operator it is used to spread the all values of [a] into [c]
+
+console.log(b);
+console.log(c);
+
+
+// QUSETION =>>   ksay pata kray ki kon sa operator spread hai or kon sa rest
+
+// SPREAD: use hota hai copy ya fir us location par kisi or ki values ko bikhrnay k liay
+// REST: use hota hai ja app ko bachey huay values ak variable me dalney ho
+
+// EXAMPLE
+
+function fun(n1, n2, ...nr) {
+    console.log(n1, n2, nr);
+}
+
+fun(12, 232, 43, 65, 8, 7, 88, 568, 9);
